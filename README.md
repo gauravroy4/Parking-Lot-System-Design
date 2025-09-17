@@ -204,5 +204,3 @@ To run tests:
 ```bash
 npm test
 ```
-
-Test coverage is generated automatically and can be viewed by opening `coverage/lcov-report/index.html` after running tests.
