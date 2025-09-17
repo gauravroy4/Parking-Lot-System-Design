@@ -195,7 +195,10 @@ Fees are calculated based on vehicle type and duration (rounded up to nearest ho
 - Type-safe with TypeScript interfaces
 
 ## Testing
-The project includes unit and integration tests using Jest. Test files are organized in the `test/` directory, grouped by modules (controllers, models, routes).
+The project includes unit and integration tests using Jest. Test files are organized in the `test/` directory, grouped by modules (controllers, models, routes). Special focus is given to concurrency scenarios:
+
+- **Concurrency Tests**: `test/controllers/concurrencyTests.ts` verifies proper handling of simultaneous check-ins and prevents double booking through MongoDB transactions
+- **Full Test Suite**: Includes validation of core functionality, edge cases, and race conditions
 
 To run tests:
 ```bash
